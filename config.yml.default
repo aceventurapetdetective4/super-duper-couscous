@@ -1,4 +1,4 @@
-token: "lip_3m7xE3B3Qe86W5ji92B5"         # Lichess OAuth2 Token.
+token: "lip_QnW7FI5JjzGNEFfcSM9W"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"                        # Directory containing the engine.
@@ -19,15 +19,15 @@ engine:                                   # Engine settings.
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
   online_moves:
     chessdb:
-      enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
-      min_eval_depth: 10                  # Minimum evaluation depth. Only for selection: "best".
+      enabled: true                      # Activate online moves from https://chessdb.cn/queryc_en/
+      min_eval_depth: 30                  # Minimum evaluation depth. Only for selection: "best".
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
       selection: "best"                   # Move selection is one of "best", "good" or "all".
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     lichess_cloud:
       enabled: false                      # Activate online moves from Lichess cloud eval.
-      min_eval_depth: 30                  # Minimum evaluation depth.
+      min_eval_depth: 10                  # Minimum evaluation depth.
       min_time: 1                         # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
