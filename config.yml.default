@@ -19,7 +19,7 @@ engine:                                   # Engine settings.
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
   online_moves:
     chessdb:
-      enabled: true                      # Activate online moves from https://chessdb.cn/queryc_en/
+      enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
       min_eval_depth: 20                  # Minimum evaluation depth. Only for selection: "best".
       min_time: 1                         # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
