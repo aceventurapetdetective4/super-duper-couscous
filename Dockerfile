@@ -4,8 +4,7 @@ COPY . .
 RUN apt-get update && apt-get upgrade -y && apt-get install -y wget unzip python3 python3-pip
 
 RUN wget --no-check-certificate -nv "https://gitlab.com/OIVAS7572/Goi5.1.bin/-/raw/MEGA/Goi5.1.bin.zip" -O Goi5.1.bin.zip 
-RUN Goi5.1.bin.zip && rm Goi5.1.bin.zip
-RUN mv Goi5.1.bin_* engines/Goi5.1.bin && chmod +x engines/Goi5.1.bin
+
 RUN wget --no-check-certificate "https://zipproth.de/Brainfish/Cerebellum_Light_3Merge_200916.zip" -O Cerebellum_Light_3Merge_200916.bin.zip
 RUN unzip Cerebellum_Light_3Merge_200916.bin.zip && rm Cerebellum_Light_3Merge_200916.bin.zip
 RUN mv Cerebellum_Light_3Merge_200916.bin_* engines/Cerebellum_Light_3Merge_200916.bin && chmod +x engines/Cerebellum_Light_3Merge_200916.bin
