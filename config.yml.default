@@ -96,5 +96,4 @@ matchmaking:
   delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
-  Goi5.1.bin: /engines/Go5.1.bin
   Cerebellum_Light_3Merge_200916.bin: /engines/Cerebellum_Light_3Merge_200916.bin
