@@ -3,9 +3,6 @@ COPY . .
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y wget unzip python3 python3-pip
 
-RUN wget https://chess-bot.com/engine/Syzygy.zip -0 Syzygy.zip
-RUN unzip Syzygy.zip && rm Syzygy.zip
-
 RUN mv config.yml.default config.yml
 RUN wget https://abrok.eu/stockfish/latest/linux/stockfish_x64_bmi2.zip -O stockfish.zip
 RUN unzip stockfish.zip && rm stockfish.zip
