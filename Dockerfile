@@ -3,10 +3,6 @@ COPY . .
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y wget unzip python3 python3-pip
 
-RUN wget --no-check-certificate "https://zipproth.de/Brainfish/Cerebellum_Light_3Merge_200916.zip" -O Cerebellum_Light_3Merge_200916.bin.zip
-RUN unzip Cerebellum_Light_3Merge_200916.bin.zip && rm Cerebellum_Light_3Merge_200916.bin.zip
-RUN mv Cerebellum_Light_3Merge_200916.bin_* engines/Cerebellum_Light_3Merge_200916.bin && chmod +x engines/Cerebellum_Light_3Merge_200916.bin
-
 RUN mv config.yml.default config.yml
 RUN wget https://abrok.eu/stockfish/latest/linux/stockfish_x64_bmi2.zip -O stockfish.zip
 RUN unzip stockfish.zip && rm stockfish.zip
