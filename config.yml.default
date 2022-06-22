@@ -5,7 +5,7 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
-    enabled: true                        # Activate opening books.
+    enabled: false                        # Activate opening books.
     books:
 #     white:                              # List of names of books to use as white.
 #       - "WhiteBook"
@@ -19,9 +19,9 @@ engine:                                   # Engine settings.
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
   online_moves:
     chessdb:
-      enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
-      min_eval_depth: 10                  # Minimum evaluation depth. Only for selection: "best".
-      min_time: 1                        # Time the bot must have at least to use the online move.
+      enabled: true                      # Activate online moves from https://chessdb.cn/queryc_en/
+      min_eval_depth: 20                  # Minimum evaluation depth. Only for selection: "best".
+      min_time: 0                         # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
       selection: "best"                   # Move selection is one of "best", "good" or "all".
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
