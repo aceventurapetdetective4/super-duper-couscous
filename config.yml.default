@@ -5,7 +5,7 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   opening_books:
-    enabled: true                        # Activate opening books.
+    enabled: false                        # Activate opening books.
     books:
 #     white:                              # List of names of books to use as white.
         - "Goi5.1"
@@ -21,15 +21,15 @@ engine:                                   # Engine settings.
     chessdb:
       enabled: true                       # Activate online moves from https://chessdb.cn/queryc_en/
       min_eval_depth: 20                  # Minimum evaluation depth. Only for selection: "best".
-      min_time: 1                         # Time the bot must have at least to use the online move.
+      min_time: 2                         # Time the bot must have at least to use the online move.
       timeout: 1                          # Time the server has to respond.
       selection: "best"                   # Move selection is one of "best", "good" or "all".
       max_depth: 100                      # Half move max depth. (Comment this line for max depth)
     lichess_cloud:
-      enabled: false                       # Activate online moves from Lichess cloud eval.
-      min_eval_depth: 10                  # Minimum evaluation depth.
-      min_time: 1                         # Time the bot must have at least to use the online move.
-      timeout: 5                          # Time the server has to respond.
+      enabled: true                       # Activate online moves from Lichess cloud eval.
+      min_eval_depth: 20                  # Minimum evaluation depth.
+      min_time: 2                         # Time the bot must have at least to use the online move.
+      timeout: 1                          # Time the server has to respond.
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
     online_egtb:
       enabled: false                      # Activate online endgame tablebases from Lichess.
@@ -64,7 +64,7 @@ challenge:                                # Incoming challenges. (Commenting all
 # max_initial: 315360000                  # Maximum amount of initial time to accept a challenge.
   variants:                               # Chess variants to accept (https://lichess.org/variant).
     - standard
-#   - chess960
+    - chess960
 #   - fromPosition
 #   - antichess
 #   - atomic
