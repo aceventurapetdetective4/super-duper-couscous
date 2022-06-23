@@ -9,7 +9,7 @@ engine:                                   # Engine settings.
     books:
 #     white:                              # List of names of books to use as white.
         - "Goi5.1"
-      black:                              # List of names of books to use as black.
+#     black:                              # List of names of books to use as black.
         - "Goi5.1"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
         - "Goi5.1" 
