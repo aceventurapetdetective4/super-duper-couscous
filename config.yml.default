@@ -12,11 +12,11 @@ engine:                                   # Engine settings.
 #     black:                              # List of names of books to use as black.
 #       - "BlackBook"
       standard:                           # List of names of books to use if there is no specific book for white, black or chess960.
-        - "Cerebellum_Light_3Merge_200916.bin" 
+        - "Goi5.1" 
 #     chess960:                           # List of names of books to use for Chess960.
 #       - "Chess960Book"
-    selection: "weighted_random"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
-#   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
+    selection: "best_move"          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+#    max_depth: 100                         # Half move max depth. (Comment this line for max depth)
   online_moves:
     chessdb:
       enabled: true                       # Activate online moves from https://chessdb.cn/queryc_en/
@@ -96,4 +96,4 @@ matchmaking:
   delay: 10                               # Time in seconds the bot must be idle before a new challenge is started.
 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
-  Cerebellum_Light_3Merge_200916.bin: /engines/Cerebellum_Light_3Merge_200916.bin
+  Goi5.1: ./Goi5.1.bin
